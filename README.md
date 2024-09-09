@@ -33,26 +33,37 @@
      ```bash
    pip install .
 
+### Steps to Install
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/SHARANBASAPPA/RFBGCPred.git
+   cd RFBGCPred
+2. **Install Dependencies: You can install the required dependencies using pip**:
+   pip install -r requirements.txt
+3. **Run the Setup (Optional): If you'd like to install the tool as a command-line tool, you can run the following command**:
+   pip install .
+
 **Running Predictions**
 1. **Single Sequence Input**
-You can predict the BGC class for a single protein sequence by passing it directly through the command line:
- ```bash
-rfbgcpred 'MKKLLLLLLPLLLALLLTPGSRHGLDVLPGAGSSLEVTSPQ' --format sequence --threshold 0.7
+    You can predict the BGC class for a single protein sequence by passing it directly through the command line:
+     ```bash
+    rfbgcpred 'MKKLLLLLLPLLLALLLTPGSRHGLDVLPGAGSSLEVTSPQ' --format sequence --threshold 0.7
 
 2. **FASTA Input**
-To predict BGCs from a FASTA file:
- ```bash
-rfbgcpred input_sequences.fasta --format fasta --threshold 0.7
+    To predict BGCs from a FASTA file:
+     ```bash
+    rfbgcpred input_sequences.fasta --format fasta --threshold 0.7
 
 3. **GenBank (GBK) Input**
-For predicting BGC classes from GenBank files:
- ```bash
-rfbgcpred input_sequences.gbk --format gbk --threshold 0.7
+    For predicting BGC classes from GenBank files:
+     ```bash
+    rfbgcpred input_sequences.gbk --format gbk --threshold 0.7
 
 4. **CSV Input**
-For predictions from a CSV file (with a column named "sequence"):
- ```bash
-rfbgcpred input_sequences.csv --format csv --threshold 0.7
+   For predictions from a CSV file (with a column named "sequence"):
+    ```bash
+   rfbgcpred input_sequences.csv --format csv --threshold 0.7
 
 **Citation**
 If you use RFBGCPred in your research, please cite the following paper:
