@@ -33,17 +33,6 @@
      ```bash
    pip install .
 
-### Steps to Install
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/SHARANBASAPPA/RFBGCPred.git
-   cd RFBGCPred
-2. **Install Dependencies: You can install the required dependencies using pip**:
-   pip install -r requirements.txt
-3. **Run the Setup (Optional): If you'd like to install the tool as a command-line tool, you can run the following command**:
-   pip install .
-
 **Running Predictions**
 1. **Single Sequence Input**
     You can predict the BGC class for a single protein sequence by passing it directly through the command line:
