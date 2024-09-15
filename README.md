@@ -1,12 +1,12 @@
-```markdown
 # RFBGCPred: A Random Forest-Based Tool for Prediction of Biosynthetic Gene Clusters
 
-It provides various input format support, including protein sequences, FASTA/Multi-FASTA files, GenBank (GBK) files, and CSV files containing protein sequences. The tool is designed to work efficiently by loading models lazily and supports multiple output formats such as console, CSV, TXT, and JSON.
+RFBGCPred provides comprehensive support for multiple input formats, including protein sequences, FASTA/Multi-FASTA files, GenBank (GBK) files, and CSV files containing protein sequences. It is designed for efficient prediction of biosynthetic gene clusters (BGCs) using Random Forest models. The tool supports multiple output formats such as console, CSV, TXT, and JSON to cater to various user needs.
 
 ## Features
+
 - **Input Format Support**:
-  - **Single protein sequence**: Directly input a single protein sequence for prediction.
-  - **FASTA/Multi-FASTA file**: Predict BGCs from a nucleotide sequence file (FASTA).
+  - **Single protein sequence**: Input a single protein sequence for prediction.
+  - **FASTA/Multi-FASTA file**: Predict BGCs from a nucleotide sequence file (FASTA or multi-FASTA).
   - **GenBank (GBK) file**: Extract protein sequences from GenBank files and predict BGCs.
   - **CSV file**: Input a CSV file containing protein sequences for batch predictions.
   
@@ -17,8 +17,7 @@ It provides various input format support, including protein sequences, FASTA/Mul
   - **JSON**: Save predictions in a structured JSON format.
 
 - **Lazy Model Loading**: Models are loaded only once to optimize memory usage and reduce computation time.
-- **Batch Processing**: Processes sequences in batches for improved speed when working with large datasets.
-
+- **Batch Processing**: Efficiently processes sequences in batches for improved speed when working with large datasets.
 
 ## Installation
 
@@ -29,7 +28,6 @@ Clone the repository to your local machine using the following command:
 ```bash
 git clone https://github.com/your-repo/rfbgcpred.git
 cd rfbgcpred
-```
 
 ### 2. Create a Virtual Environment
 
