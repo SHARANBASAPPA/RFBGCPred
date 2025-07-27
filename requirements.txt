@@ -1,0 +1,6 @@
+biopython
+scikit-learn==1.2.2
+umap-learn==0.5.3
+numba==0.56.4
+gensim
+pandas
